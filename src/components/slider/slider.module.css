@@ -10,7 +10,7 @@ body {
   width: 100%;
   max-width: 900px;
   height: 500px;
-  margin: 250px auto;
+  margin: 0px auto;
   overflow: hidden;
   border-radius: 12px;
   background: linear-gradient(135deg, rgba(35, 10, 5, 0.85), rgba(15, 5, 2, 0.95));

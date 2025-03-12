@@ -80,10 +80,14 @@ export default function HologramEffect({ src }) {
 
   return (
     <div className={styles.hologramContainer} id="holo">
-      <img src={src} alt="Hologram" className={styles.hologram}  />
+      <img src={src} alt="Hologram" className={styles.hologram} />
 
       {/* Audio element for playing the MP3 file */}
-      <audio ref={audioRef} src="/assets/images/helenavoice.mp3" preload="auto" />
+      <audio
+        ref={audioRef}
+        src="/assets/images/helenavoice.mp3"
+        preload="auto"
+      />
 
       <div
         ref={chatboxRef}
@@ -110,7 +114,7 @@ export default function HologramEffect({ src }) {
           }`}
         >
           {/* Links inside the dropdown */}
-          <HashLink smooth to="/article#ai-webdev">
+          <HashLink smooth to="/article#aidrevet">
             {isDropdownOpen || isHovered ? (
               <ReactTyped
                 strings={["AI-Drevet Webudvikling"]}
@@ -124,7 +128,7 @@ export default function HologramEffect({ src }) {
             )}
           </HashLink>
 
-          <HashLink smooth to="/article#voice-search">
+          <HashLink smooth to="/article#stemmesogning">
             {isDropdownOpen || isHovered ? (
               <ReactTyped
                 strings={["Optimering af Stemmesøgning"]}
@@ -152,7 +156,7 @@ export default function HologramEffect({ src }) {
             )}
           </HashLink>
 
-          <HashLink smooth to="/article#iot-webdev">
+          <HashLink smooth to="/article#iot">
             {isDropdownOpen || isHovered ? (
               <ReactTyped
                 strings={["Internet of Things (IoT) og Webudvikling"]}
@@ -166,7 +170,7 @@ export default function HologramEffect({ src }) {
             )}
           </HashLink>
 
-          <HashLink smooth to="/article#security-blockchain">
+          <HashLink smooth to="/article#blockchain">
             {isDropdownOpen || isHovered ? (
               <ReactTyped
                 strings={["Sikkerhed og Blockchain i Webudvikling"]}
@@ -180,7 +184,7 @@ export default function HologramEffect({ src }) {
             )}
           </HashLink>
 
-          <HashLink smooth to="/article#sustainable-webdev">
+          <HashLink smooth to="/article#bd">
             {isDropdownOpen || isHovered ? (
               <ReactTyped
                 strings={["Bæredygtighed i Webudvikling"]}
